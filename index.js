@@ -8,21 +8,16 @@ function greet() {
 
     //Step 4
     confirm("Have you had a birthday yet this year?");
-
-    /*function confirmAction () {
-        let confirmAction = confirm("Have you had a birthday yet this year?");
-        if (confirmAction) {
-            alert("You were born in ");
-        } else {
-            alert("You were born in ")
-        }
-    }*/
-
-    /*Step 5: use new Date().getFullYear()
-    let today = new Date();
-    let dd = today.getDate();
-    let month = today.getMonth() + 1;
-
-    const yyyy = today.getFullYear(); */
+    
+    //Step 5
+    let currentYear = new Date().getFullYear();
+    
+    if (confirm) {
+        let birthdayYes = currentYear - age
+        alert("You were born in " + birthdayYes);
+    } else {
+        let birthdayNo = currentYear - (age + 1)
+        alert("You were born in " + birthdayNo);
+    }
 
 }
