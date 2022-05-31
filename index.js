@@ -7,12 +7,13 @@ function greet() {
     console.log(parseInt(age));
 
     //Step 4
-    confirm("Have you had a birthday yet this year?");
+    var hasHadBirthday = confirm("Have you had a birthday yet this year?");
     
     //Step 5
     let currentYear = new Date().getFullYear();
+    console.log(parseInt(currentYear));
     
-    if (confirm) {
+    if (hasHadBirthday) {
         let birthdayYes = currentYear - age
         alert("You were born in " + birthdayYes);
     } else {
